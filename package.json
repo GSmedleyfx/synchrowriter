@@ -1,13 +1,14 @@
 {
-  "name": "sociowriter",
+  "name": "synchrowriter",
   "version": "1.0.0",
-  "description": "An application to ensure mutual writing productivity",
+  "description": "Mutually Assured Productivity",
   "main": "index.js",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "electron": "^1.8.3",
     "jquery": "^3.3.1",
-    "popper.js": "^1.14.0"
+    "popper.js": "^1.14.0",
+    "websocketserver": "^1.0.0"
   },
   "devDependencies": {},
   "scripts": {
