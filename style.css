@@ -1,0 +1,24 @@
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    resize: none;
+}
+
+.texteditor {
+    width: 100%;
+    height: 100%;
+}
+
+#yours {
+    
+}
+
+#theirs {
+    filter:blur(5px);
+    
+}
