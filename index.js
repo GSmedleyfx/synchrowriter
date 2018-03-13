@@ -2,6 +2,7 @@ const electron = require('electron');
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
 const Menu = electron.Menu;
+const ipcMain = electron.ipcMain;
 const path = require('path')
 const url = require('url')
 
@@ -22,15 +23,13 @@ function createWindow()
                     {
                         label:"Host",
                         click (item, focusedWindow) {
-                            console.log(focusedWindow);
-                            
-                            //focusedWindow.hostServer();
+                            win.webContents.send("hostServer");
                         }
                     },
                     {
                         label:"Connect",
                         click (item, focusedWindow) {
-                            focusedWindow.activateSynchronization();
+                            win.webContents.send("activateSynchronization");
                         }
 
                     }

@@ -1,8 +1,17 @@
+const electron = require("electron");
+const modal = require("modal");
+window.onload = function()
+{
+    
+
+    electron.ipcRenderer.on("hostServer", host);
+    electron.ipcRenderer.on("activateSynchronization", activateSynchronization);
+}
+
 function host()
 {
     var WebSocketServer = require("websocketserver");
     var server = new WebSocketServer("all", 9000);
-    activateSynchronization();
 }
 
 function activateSynchronization()
